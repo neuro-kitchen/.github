@@ -1,0 +1,6 @@
+# Org-wide funding: shows a "Sponsor" button on every neuro-kitchen repo
+# that doesn't have its own .github/FUNDING.yml.
+# The button works once your GitHub Sponsors profile is approved.
+
+github: [neuro-kitchen]
+# open_collective: neuro-kitchen   # uncomment after Open Source Collective approves you

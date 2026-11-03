@@ -1,0 +1,24 @@
+# Copy to .github/dependabot.yml in each project repo.
+# Keeps GitHub Actions and dependencies patched with weekly update PRs.
+# Delete the ecosystems a repo doesn't use.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "pip"        # Python projects
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "cargo"      # Rust projects
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "gradle"     # Kotlin projects
+    directory: "/"
+    schedule:
+      interval: "weekly"
