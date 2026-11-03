@@ -1,17 +1,33 @@
-# neuro-kitchen/.github
+# neuro-kitchen.github.io
 
-Organization-wide files for [neuro-kitchen](https://github.com/neuro-kitchen).
+The website for [neuro-kitchen](https://github.com/neuro-kitchen), built with [Astro](https://astro.build)
+and deployed to GitHub Pages at **https://neuro-kitchen.github.io**.
 
-GitHub applies these to every repo in the org that doesn't have its own copy:
+## Edit the site
 
-| File | What it does |
+| To change | Edit |
 |---|---|
-| `profile/README.md` | The org's public landing page |
-| `FUNDING.yml` | The "Sponsor" button on every repo |
-| `SECURITY.md` | How to report vulnerabilities privately |
-| `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `SUPPORT.md` | Community guidelines |
-| `ISSUE_TEMPLATE/`, `PULL_REQUEST_TEMPLATE.md` | Default issue and PR forms |
+| The tools in "The toolkit" | `src/data/tools.ts` |
+| Sponsor, contributing and footer links | `src/data/site.ts` |
+| Hero, principles and support text | `src/components/` |
+| Colors and fonts | `src/styles/global.css` |
 
-`per-repo-templates/` holds files that GitHub does **not** inherit. Copy them into each project repo.
+To add a tool, add an entry to `src/data/tools.ts`. Leave out `repo` while it's private and the card shows "Coming soon".
 
-`LICENSE` covers the files in this repo only. Each project needs its own `LICENSE` file.
+## Run it locally
+
+```bash
+npm install
+npm run dev      # http://localhost:4321
+npm run build    # outputs to dist/
+```
+
+## Deploy
+
+Every push to `main` builds and deploys automatically through `.github/workflows/deploy.yml`.
+
+One-time setup: in the repo, go to **Settings → Pages** and set **Source** to **GitHub Actions**.
+
+## License
+
+[Apache-2.0](LICENSE)
