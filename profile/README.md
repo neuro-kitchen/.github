@@ -1,24 +1,27 @@
 ## 🧠🍳 neuro-kitchen
 
-**Open-source tools for neuroscience research.**
+**Research software you can read, run and trust.**
 
-neuro-kitchen is where research software gets cooked up: tools for signal processing,
-data conversion, and brain-computer interface work. Everything here is free and
-open source under the Apache-2.0 license, built for scientists who want reproducible,
-inspectable tools.
+neuro-kitchen is a growing open-source toolkit for research: signal processing, data
+conversion, paper management and image analysis. Everything is free and open source
+under the Apache-2.0 license.
+
+🌐 **[neuro-kitchen.github.io](https://neuro-kitchen.github.io)**
 
 ### 🥘 What's on the menu
 
 | Project | What it does |
 |---|---|
-| [**dsp-kitchen**](https://github.com/neuro-kitchen/dsp-kitchen) | Digital signal processing tools |
-| [**neuro-convert**](https://github.com/neuro-kitchen/neuro-convert) | Converting neuroscience data between formats |
+| [**dsp-kitchen**](https://github.com/neuro-kitchen/dsp-kitchen) | Digital signal processing tools for neural recordings |
+| [**neuro-convert**](https://github.com/neuro-kitchen/neuro-convert) | Convert neuroscience data between formats |
+| **quire** *(coming soon)* | A reference manager for collecting, reading and citing papers |
+| **lumen** *(coming soon)* | Fast, Rust-powered analysis for microscopy and whole-slide images |
 
-<!-- Edit the descriptions above, and add rows as more projects go public. -->
+<!-- Keep this list in sync with src/data/tools.ts in neuro-kitchen.github.io. -->
 
 ### 💖 Support the work
 
-neuro-kitchen is built and maintained by a solo developer. If these tools help your research:
+If these tools help your research:
 
 - ⭐ **Star** the repos you use, so other researchers can find them
 - 💖 **[Sponsor on GitHub](https://github.com/sponsors/neuro-kitchen)**, one-time or monthly
@@ -28,4 +31,5 @@ neuro-kitchen is built and maintained by a solo developer. If these tools help y
 ### 🤝 Get involved
 
 Bug reports, feature ideas, and pull requests are welcome. See the
-[contributing guide](https://github.com/neuro-kitchen/.github/blob/main/CONTRIBUTING.md) to get started.
+[contributing guide](https://github.com/neuro-kitchen/.github/blob/main/CONTRIBUTING.md) to get started,
+or join the [discussions](https://github.com/orgs/neuro-kitchen/discussions).
