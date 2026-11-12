@@ -14,7 +14,7 @@ Apache-2.0 (quire: AGPL-3.0).
 | Project | What it does |
 |---|---|
 | [**dsp-kitchen**](https://github.com/neuro-kitchen/dsp-kitchen) | Multi-channel signal processing and spike sorting on any GPU (Vulkan, Metal, CUDA, ROCm) or the CPU: a desktop app, Rust crates, `pip install dspk` and a command line |
-| **lumen** *(coming soon)* | A GPU workstation for histology and microscopy: whole-slide and OME-Zarr images, annotation, pipelines and measurement tables |
+| **[lucem](https://github.com/neuro-kitchen/lucem)** | A GPU workstation for histology and microscopy: whole-slide and OME-Zarr images, annotation, pipelines and measurement tables |
 | [**kitchen**](https://github.com/neuro-kitchen/kitchen) | What the apps share: one look, one frame, one list of actions for people and agents (`cargo add kitchen-ui`) |
 | [**neuro-convert**](https://github.com/neuro-kitchen/neuro-convert) | Convert neuroscience data between formats |
 | **quire** *(coming soon)* | A local-first reference manager for collecting, reading and citing papers, on desktop and mobile |
