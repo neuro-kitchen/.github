@@ -11,13 +11,25 @@ Thanks for wanting to help! Contributions from researchers and developers are bo
 
 ## Making a change
 
-1. **Fork** the repository and create a branch from `main`.
-2. **Make your change**, keeping each pull request focused on one thing.
+1. **Fork** the repository and create a branch from the **version branch** the next release is
+   built on (`version/v0.0.x`, `versions/v0.0.x` in dsp-kitchen; the newest one), or from `main`
+   if the project has none.
+2. **Make your change**, keeping each pull request focused on one thing, and each commit on one
+   concern.
 3. **Add tests** if you change behavior, and make sure existing tests pass.
-4. **Update docs** if you change how something is used.
-5. **Open a pull request** and fill in the template.
+4. **Update docs** if you change how something is used, and add a line to `CHANGELOG.md` under
+   *Unreleased*.
+5. **Open a pull request into that version branch** and fill in the template.
 
-All changes to `main` go through a pull request and review. Direct pushes to `main` are blocked.
+All changes go through a pull request and review. Direct pushes to `main` are blocked.
+
+## Releases
+
+A version branch collects the work of one release. When it is ready, a release pull request
+into `main` sets the version and moves the changelog's *Unreleased* section under it. After the
+merge, the merge commit is tagged `vX.Y.Z`; the release workflow checks the tag against the
+version, builds, publishes (crates.io and PyPI through trusted publishing, after a maintainer
+approves) and makes the GitHub release from the changelog.
 
 ## Guidelines
 
